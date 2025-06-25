@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Transformasi Digital untuk Bisnis Anda</title>
+    <meta name="description" content="Solusi teknologi terdepan untuk mengembangkan bisnis Anda dengan aplikasi web, mobile, dan sistem custom yang inovatif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3730a3 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="code-2" class="h-8 w-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-900">TechSolutions</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-blue-600 font-medium">Beranda</a>
+                    <a href="tentang-kami.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Tentang Kami</a>
+                    <a href="layanan.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Layanan</a>
+                    <a href="portofolio.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Portofolio</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Blog</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Kontak</a>
+                </nav>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="kontak.html" class="px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-md transition-colors">
+                        Konsultasi Gratis
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-lg z-50 md:hidden">
+            <div class="p-4">
+                <button id="mobile-menu-close" class="float-right p-2">
+                    <i data-lucide="x" class="h-6 w-6"></i>
+                </button>
+                <div class="clear-both mt-8 space-y-4">
+                    <a href="index.html" class="block text-lg font-medium text-blue-600">Beranda</a>
+                    <a href="tentang-kami.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Tentang Kami</a>
+                    <a href="layanan.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Layanan</a>
+                    <a href="portofolio.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Portofolio</a>
+                    <a href="blog.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Blog</a>
+                    <a href="kontak.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Kontak</a>
+                    <a href="kontak.html" class="block mt-4 px-4 py-2 bg-blue-600 text-white rounded-md text-center">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-20 lg:py-32 relative">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Transformasi Digital
+                        <span class="block text-blue-300">Untuk Bisnis Anda</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+                        Solusi teknologi terdepan untuk mengembangkan bisnis Anda dengan aplikasi web, mobile, dan sistem custom yang inovatif
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="kontak.html" class="inline-flex items-center justify-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors">
+                            Konsultasi Gratis
+                            <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                        </a>
+                        <a href="portofolio.html" class="inline-flex items-center justify-center px-8 py-3 border border-white text-white hover:bg-white hover:text-blue-900 rounded-md font-medium transition-colors">
+                            Lihat Portofolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Highlight -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Layanan Kami</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Solusi teknologi komprehensif untuk semua kebutuhan digital bisnis Anda
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Web Development -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 card-hover group">
+                        <div class="p-6 text-center">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="code" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Web Development</h3>
+                            <p class="text-gray-600 mb-4">Company site, E-commerce, Portal, Web App</p>
+                            <a href="layanan.html#web-development" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                                Pelajari Lebih Lanjut
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 card-hover group">
+                        <div class="p-6 text-center">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="smartphone" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile App</h3>
+                            <p class="text-gray-600 mb-4">Native, Cross-platform, PWA, Mobile Commerce</p>
+                            <a href="layanan.html#mobile-app" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                                Pelajari Lebih Lanjut
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Custom Software -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 card-hover group">
+                        <div class="p-6 text-center">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="settings" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Custom Software</h3>
+                            <p class="text-gray-600 mb-4">ERP, CRM, Inventory, BI</p>
+                            <a href="layanan.html#custom-software" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                                Pelajari Lebih Lanjut
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Design -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 card-hover group">
+                        <div class="p-6 text-center">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="palette" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">UI/UX Design</h3>
+                            <p class="text-gray-600 mb-4">Wireframing, Visual Design, User Testing</p>
+                            <a href="layanan.html#ui-ux-design" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                                Pelajari Lebih Lanjut
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- API Development -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 card-hover group">
+                        <div class="p-6 text-center">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="database" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">API Development</h3>
+                            <p class="text-gray-600 mb-4">RESTful, GraphQL, Microservices</p>
+                            <a href="layanan.html#api-development" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                                Pelajari Lebih Lanjut
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Konsultasi IT -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 card-hover group">
+                        <div class="p-6 text-center">
+                            <div class="mx-auto w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                                <i data-lucide="users" class="h-8 w-8 text-blue-600 group-hover:text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Konsultasi IT</h3>
+                            <p class="text-gray-600 mb-4">Strategy, Assessment, Digital Transformation</p>
+                            <a href="layanan.html#konsultasi-it" class="inline-flex items-center text-blue-600 hover:text-blue-700">
+                                Pelajari Lebih Lanjut
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mengapa Memilih Kami?</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Keunggulan yang membuat kami menjadi partner teknologi terpercaya
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="mx-auto w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="check-circle" class="h-10 w-10 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Solusi Responsif</h3>
+                        <p class="text-gray-600">Aplikasi yang dapat diakses di semua perangkat dengan performa optimal</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="mx-auto w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="users" class="h-10 w-10 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Tim Profesional</h3>
+                        <p class="text-gray-600">Developer berpengalaman dengan keahlian teknologi terkini</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="mx-auto w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="headphones" class="h-10 w-10 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Dukungan 24/7</h3>
+                        <p class="text-gray-600">Support teknis dan maintenance berkelanjutan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Portofolio Terbaik Kami</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Proyek-proyek sukses yang telah kami kerjakan untuk berbagai industri
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                        <div class="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Retail</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">E-Commerce Platform</h3>
+                            <p class="text-gray-600 mb-4">Platform jual beli online dengan sistem pembayaran terintegrasi</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">React</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Node.js</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                            </div>
+                            <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                        <div class="relative h-48 bg-gradient-to-br from-green-500 to-blue-600">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Fintech</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Mobile Banking App</h3>
+                            <p class="text-gray-600 mb-4">Aplikasi mobile banking dengan fitur keamanan tinggi</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">React Native</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Firebase</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Blockchain</span>
+                            </div>
+                            <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+                        <div class="relative h-48 bg-gradient-to-br from-orange-500 to-red-600">
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-blue-600 text-white px-2 py-1 rounded text-sm">Manufacturing</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">ERP System</h3>
+                            <p class="text-gray-600 mb-4">Sistem manajemen sumber daya perusahaan terintegrasi</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Vue.js</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Laravel</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">MySQL</span>
+                            </div>
+                            <button class="w-full px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors">
+                                Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="portofolio.html" class="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors">
+                        Lihat Semua Portofolio
+                        <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-blue-900 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Siap Memulai Proyek Anda?</h2>
+                <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+                    Konsultasikan kebutuhan teknologi bisnis Anda dengan tim ahli kami. Dapatkan solusi terbaik yang sesuai dengan budget dan timeline Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="kontak.html" class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-900 hover:bg-gray-100 rounded-md font-medium transition-colors">
+                        Hubungi Kami Sekarang
+                    </a>
+                    <a href="tentang-kami.html" class="inline-flex items-center justify-center px-8 py-3 border border-white text-white hover:bg-white hover:text-blue-900 rounded-md font-medium transition-colors">
+                        Tentang Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i data-lucide="code-2" class="h-8 w-8 text-blue-400"></i>
+                        <span class="text-xl font-bold">TechSolutions</span>
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="layanan.html#web-development" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
+                        <li><a href="layanan.html#mobile-app" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile App</a></li>
+                        <li><a href="layanan.html#custom-software" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
+                        <li><a href="layanan.html#ui-ux-design" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
+                        <li><a href="layanan.html#api-development" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
+                        <li><a href="layanan.html#konsultasi-it" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
+                        <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
+                        <li><a href="karir.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
+                        <li><a href="faq.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-300">Surabaya:</p>
+                                <p class="text-gray-400">Twin Tower Hotel Lt. 6, Jl. Kalisari I No. 1</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-300">Jakarta:</p>
+                                <p class="text-gray-400">Wisma Geha Lt. 4, Jl Timor no.25</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="h-4 w-4 text-blue-400"></i>
+                            <span class="text-gray-300">+62 812-3456-7890</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="h-4 w-4 text-blue-400"></i>
+                            <span class="text-gray-300">info@techsolutions.id</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">Newsletter</h4>
+                        <div class="flex space-x-2">
+                            <input type="email" placeholder="Email Anda" class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-md text-sm">
+                            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2024 TechSolutions. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-blue-400 transition-colors">Terms of Service</a>
+                        <a href="sitemap.html" class="hover:text-blue-400 transition-colors">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
