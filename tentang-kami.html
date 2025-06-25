@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - TechSolutions</title>
+    <meta name="description" content="Partner teknologi terpercaya yang telah membantu ratusan perusahaan dalam transformasi digital sejak 2018">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3730a3 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+        <div class="container mx-auto px-4">
+            <div class="flex h-16 items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i data-lucide="code-2" class="h-8 w-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-gray-900">TechSolutions</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Beranda</a>
+                    <a href="tentang-kami.html" class="text-blue-600 font-medium">Tentang Kami</a>
+                    <a href="layanan.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Layanan</a>
+                    <a href="portofolio.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Portofolio</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Blog</a>
+                    <a href="kontak.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Kontak</a>
+                </nav>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="kontak.html" class="px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-md transition-colors">
+                        Konsultasi Gratis
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-lg z-50 md:hidden">
+            <div class="p-4">
+                <button id="mobile-menu-close" class="float-right p-2">
+                    <i data-lucide="x" class="h-6 w-6"></i>
+                </button>
+                <div class="clear-both mt-8 space-y-4">
+                    <a href="index.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Beranda</a>
+                    <a href="tentang-kami.html" class="block text-lg font-medium text-blue-600">Tentang Kami</a>
+                    <a href="layanan.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Layanan</a>
+                    <a href="portofolio.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Portofolio</a>
+                    <a href="blog.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Blog</a>
+                    <a href="kontak.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Kontak</a>
+                    <a href="kontak.html" class="block mt-4 px-4 py-2 bg-blue-600 text-white rounded-md text-center">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Tentang TechSolutions</h1>
+                    <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                        Partner teknologi terpercaya yang telah membantu ratusan perusahaan dalam transformasi digital sejak 2018
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="mb-12">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="target" class="h-8 w-8 text-blue-600 mr-3"></i>
+                                <h2 class="text-3xl font-bold text-gray-900">Misi Kami</h2>
+                            </div>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Menghadirkan solusi teknologi inovatif yang membantu bisnis berkembang dan bersaing di era digital. Kami berkomitmen memberikan layanan berkualitas tinggi dengan pendekatan yang personal dan profesional.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="eye" class="h-8 w-8 text-blue-600 mr-3"></i>
+                                <h2 class="text-3xl font-bold text-gray-900">Visi Kami</h2>
+                            </div>
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Menjadi perusahaan teknologi terdepan di Indonesia yang dikenal karena inovasi, kualitas, dan kepercayaan klien dalam menghadirkan transformasi digital yang berkelanjutan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg shadow-lg flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <i data-lucide="users" class="h-24 w-24 mx-auto mb-4"></i>
+                                <p class="text-xl font-semibold">Tim Profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Alur Kerja Kami</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Proses yang terstruktur dan transparan untuk memastikan kesuksesan proyek Anda
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <span class="text-2xl font-bold text-white">01</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Konsultasi</h3>
+                        <p class="text-gray-600">Analisis kebutuhan dan diskusi solusi terbaik untuk bisnis Anda</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <span class="text-2xl font-bold text-white">02</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Desain</h3>
+                        <p class="text-gray-600">Perancangan UI/UX dan arsitektur sistem yang optimal</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <span class="text-2xl font-bold text-white">03</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Implementasi</h3>
+                        <p class="text-gray-600">Development dengan metodologi agile dan quality assurance</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="mx-auto w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+                            <span class="text-2xl font-bold text-white">04</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Support</h3>
+                        <p class="text-gray-600">Maintenance berkelanjutan dan dukungan teknis 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tim Inti Kami</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Profesional berpengalaman dengan keahlian di berbagai teknologi terkini
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Budi Santoso</h3>
+                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm mb-3">CEO & Founder</span>
+                        <p class="text-sm text-gray-600">Digital Strategy, Business Development</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Sari Wijaya</h3>
+                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm mb-3">CTO</span>
+                        <p class="text-sm text-gray-600">Full-Stack Development, System Architecture</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Ahmad Rahman</h3>
+                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm mb-3">Lead Mobile Developer</span>
+                        <p class="text-sm text-gray-600">React Native, Flutter, iOS/Android</p>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover text-center p-6">
+                        <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-16 w-16 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Maya Putri</h3>
+                        <span class="inline-block bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm mb-3">UI/UX Design Lead</span>
+                        <p class="text-sm text-gray-600">User Experience, Visual Design, Prototyping</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Testimoni Klien</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Kepercayaan dan kepuasan klien adalah prioritas utama kami
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">E-Commerce</span>
+                            <div class="flex">
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">PT. Maju Bersama</h3>
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="message-square" class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"></i>
+                            <p class="text-gray-600 italic">"TechSolutions berhasil mengembangkan platform e-commerce kami dengan fitur yang lengkap dan performa yang excellent. Tim mereka sangat profesional dan responsif."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Fintech</span>
+                            <div class="flex">
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Bank Digital Nusantara</h3>
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="message-square" class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"></i>
+                            <p class="text-gray-600 italic">"Aplikasi mobile banking yang dikembangkan sangat user-friendly dan aman. Proses development berjalan sesuai timeline dan budget yang disepakati."</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow card-hover p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Manufacturing</span>
+                            <div class="flex">
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">CV. Teknologi Maju</h3>
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="message-square" class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"></i>
+                            <p class="text-gray-600 italic">"Sistem ERP yang dibangun membantu mengoptimalkan operasional perusahaan kami. ROI yang didapat sangat memuaskan dalam 6 bulan pertama."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i data-lucide="code-2" class="h-8 w-8 text-blue-400"></i>
+                        <span class="text-xl font-bold">TechSolutions</span>
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="layanan.html#web-development" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
+                        <li><a href="layanan.html#mobile-app" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile App</a></li>
+                        <li><a href="layanan.html#custom-software" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
+                        <li><a href="layanan.html#ui-ux-design" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
+                        <li><a href="layanan.html#api-development" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
+                        <li><a href="layanan.html#konsultasi-it" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
+                        <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
+                        <li><a href="karir.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
+                        <li><a href="faq.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
+                        <li><a href="privacy.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-300">Surabaya:</p>
+                                <p class="text-gray-400">Twin Tower Hotel Lt. 6, Jl. Kalisari I No. 1</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-gray-300">Jakarta:</p>
+                                <p class="text-gray-400">Wisma Geha Lt. 4, Jl Timor no.25</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="h-4 w-4 text-blue-400"></i>
+                            <span class="text-gray-300">+62 812-3456-7890</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="h-4 w-4 text-blue-400"></i>
+                            <span class="text-gray-300">info@techsolutions.id</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">Newsletter</h4>
+                        <div class="flex space-x-2">
+                            <input type="email" placeholder="Email Anda" class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-md text-sm">
+                            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2024 TechSolutions. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-blue-400 transition-colors">Terms of Service</a>
+                        <a href="sitemap.html" class="hover:text-blue-400 transition-colors">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
