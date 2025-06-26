@@ -9,30 +9,22 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <style>
         .hero-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3730a3 100%);
             position: relative;
+            background: url('background.png') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
         }
         .hero-bg::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
-            background-size: 100% 100%;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* lapisan transparan gelap */
+            z-index: 1;
         }
-        .hero-pattern {
-            background-image: 
-                linear-gradient(30deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%, rgba(255,255,255,0.1)),
-                linear-gradient(150deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%, rgba(255,255,255,0.1)),
-                linear-gradient(30deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%, rgba(255,255,255,0.1)),
-                linear-gradient(150deg, rgba(255,255,255,0.1) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.1) 87.5%, rgba(255,255,255,0.1));
-            background-size: 80px 140px;
-            background-position: 0 0, 0 0, 40px 70px, 40px 70px;
+        .hero-content {
+            position: relative;
+            z-index: 2;
         }
         .card-hover:hover {
             transform: translateY(-4px);
@@ -129,33 +121,33 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero-bg hero-pattern text-white py-20 lg:py-32 relative overflow-hidden">
+         <!-- Hero Section -->
+        <section class="hero-bg text-white py-20 lg:py-32 relative overflow-hidden">
             <div class="floating-shapes">
-                <div class="shape w-32 h-32 bg-white rounded-full"></div>
-                <div class="shape w-24 h-24 bg-white rounded-lg rotate-45"></div>
-                <div class="shape w-20 h-20 bg-white rounded-full"></div>
+            <div class="shape w-32 h-32 bg-white rounded-full"></div>
+            <div class="shape w-24 h-24 bg-white rounded-lg rotate-45"></div>
+            <div class="shape w-20 h-20 bg-white rounded-full"></div>
             </div>
-            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="absolute inset-0 bg-black/20"></div>
             <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                        Transformasi Digital
-                        <span class="block text-blue-300">Untuk Bisnis Anda</span>
-                    </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-                        Solusi teknologi terdepan untuk mengembangkan bisnis Anda dengan aplikasi web, mobile, dan sistem custom yang inovatif
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="kontak.html" class="inline-flex items-center justify-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors">
-                            Konsultasi Gratis
-                            <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
-                        </a>
-                        <a href="portofolio.html" class="inline-flex items-center justify-center px-8 py-3 border border-white text-white hover:bg-white hover:text-blue-900 rounded-md font-medium transition-colors">
-                            Lihat Portofolio
-                        </a>
-                    </div>
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Transformasi Digital
+                <span class="block text-blue-300">Untuk Bisnis Anda</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+                Solusi teknologi terdepan untuk mengembangkan bisnis Anda dengan aplikasi web, mobile, dan sistem custom yang inovatif
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="kontak.html" class="inline-flex items-center justify-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors">
+                    Konsultasi Gratis
+                    <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                </a>
+                <a href="portofolio.html" class="inline-flex items-center justify-center px-8 py-3 border border-white text-white hover:bg-white hover:text-blue-900 rounded-md font-medium transition-colors">
+                    Lihat Portofolio
+                </a>
                 </div>
+            </div>
             </div>
         </section>
 
