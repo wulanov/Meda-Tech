@@ -10,9 +10,11 @@
     <style>
         .hero-bg {
             position: relative;
-            background: url('background.png') no-repeat center center;
-            background-size: cover;
-            background-attachment: fixed;
+            background: 
+                url('bg2.png') no-repeat center center, /* gambar kedua (di atas) */
+                url('bg1.jpeg') no-repeat center center; /* gambar pertama (di bawah) */
+            background-size: cover, cover;
+            background-attachment: fixed, fixed;
             min-height: 100vh;
         }
         .hero-bg::before {
