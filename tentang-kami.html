@@ -22,7 +22,7 @@
         <div class="container mx-auto px-4">
             <div class="flex h-16 items-center justify-between">
                 <a href="/" class="flex items-center space-x-3">
-                    <img src="logo.png" alt="Logo Meda Technology" class="h-10 w-auto">
+                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto">
                 </a>
 
                 <nav class="flex items-center space-x-8">
@@ -170,40 +170,106 @@
         </section>
     </main>
 
-    <!-- Footer (sama seperti index.html) -->
-    <footer class="bg-gray-900 text-white">
-        <div class="container mx-auto px-4 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="space-y-4">
-                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-8 w-auto">
-                    <p class="text-gray-300 text-sm">Partner teknologi terpercaya untuk transformasi digital bisnis Anda.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white" role="contentinfo">
+        <div class="container mx-auto px-4 py-16 lg:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4 pl-0 md:pl-2 lg:pl-2 -ml-4">
+                    <a href="index.html" class="flex items-center space-x-3" aria-label="Meda Technology - Beranda">
+                        <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto" width="200" height="100">
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan sejak 2020.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook Meda Technology">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://twitter.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Twitter Meda Technology">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://instagram.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Instagram Meda Technology">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn Meda Technology">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
                 </div>
-                <div>
+
+                <!-- Services -->
+                <div class="lg:pl-7">
                     <h3 class="text-lg font-semibold mb-4">Layanan</h3>
-                    <ul class="space-y-2">
-                        <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 text-sm">Web Development</a></li>
-                        <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 text-sm">Mobile Development</a></li>
-                        <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 text-sm">Custom Software</a></li>
-                    </ul>
+                    <nav aria-label="Footer services navigation">
+                        <ul class="space-y-2">
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile Development</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Perusahaan</h3>
-                    <ul class="space-y-2">
-                        <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 text-sm">Tentang Kami</a></li>
-                        <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 text-sm">Portofolio</a></li>
-                        <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 text-sm">Blog</a></li>
-                    </ul>
+
+                <!-- Quick Links -->
+                <div class="lg:pl-6">
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <nav aria-label="Footer quick links navigation">
+                        <ul class="space-y-2">
+                            <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
+                            <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
+                            <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
                 </div>
+
+                <!-- Contact & Newsletter -->
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <p class="text-gray-300 text-sm">info@medatechnology.id</p>
-                    <p class="text-gray-300 text-sm">+62 812-3456-7890</p>
+                    <address class="space-y-3 text-sm not-italic">
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
+                            <div>
+                                <p class="text-gray-300">Surabaya:</p>
+                                <p class="text-gray-400">Jl.Pudak No.5</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
+                            <div>
+                                <p class="text-gray-300">Jogjakarta:</p>
+                                <p class="text-gray-400">Wisma Geha Lt. 4, Jl Timor no.25</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="phone" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
+                            <a href="tel:+6281234567890" class="text-gray-300 hover:text-blue-400 transition-colors">+62 812-3456-7890</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="mail" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
+                            <a href="mailto:info@medatechnology.id" class="text-gray-300 hover:text-blue-400 transition-colors">info@medatechnology.id</a>
+                        </div>
+                    </address>
                 </div>
             </div>
         </div>
+
+        <!-- Bottom Bar -->
         <div class="border-t border-gray-800">
-            <div class="container mx-auto px-4 py-6 text-center">
-                <p class="text-gray-400 text-sm">&copy; 2024 Meda Technology. All rights reserved.</p>
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                    <p>&copy; 2024 Meda Technology. All rights reserved.</p>
+                    <nav class="flex space-x-6 mt-4 md:mt-0" aria-label="Footer legal navigation">
+                        <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-blue-400 transition-colors">Sitemap</a>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>

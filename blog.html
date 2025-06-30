@@ -4,37 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Meda Technology</title>
-    <meta name="description" content="Artikel teknologi, insights, dan panduan dari tim Meda Technology tentang pengembangan software dan transformasi digital">
+    <meta name="description" content="Blog Meda Technology - Artikel terbaru tentang teknologi, web development, mobile app, dan tips transformasi digital untuk bisnis Anda.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <style>
-        .hero-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3730a3 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            transition: all 0.3s ease;
-        }
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.3s ease;
-        }
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-    </style>
 </head>
+
 <body class="bg-white">
     <!-- Header -->
     <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
         <div class="container mx-auto px-4">
             <div class="flex h-16 items-center justify-between">
                 <a href="index.html" class="flex items-center space-x-3">
-                    <img src="assets/logo.png" alt="Meda Technology" class="h-10 w-auto">
+                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto">
                 </a>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
+                <nav class="flex items-center space-x-8">
                     <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Beranda</a>
                     <a href="tentang-kami.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Tentang Kami</a>
                     <a href="layanan.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Layanan</a>
@@ -43,33 +28,10 @@
                     <a href="kontak.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Kontak</a>
                 </nav>
 
-                <div class="hidden md:flex items-center space-x-4">
+                <div class="flex items-center space-x-4">
                     <a href="kontak.html" class="px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-md transition-colors">
                         Konsultasi Gratis
                     </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2">
-                    <i data-lucide="menu" class="h-6 w-6"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-lg z-50 md:hidden">
-            <div class="p-4">
-                <button id="mobile-menu-close" class="float-right p-2">
-                    <i data-lucide="x" class="h-6 w-6"></i>
-                </button>
-                <div class="clear-both mt-8 space-y-4">
-                    <a href="index.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Beranda</a>
-                    <a href="tentang-kami.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Tentang Kami</a>
-                    <a href="layanan.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Layanan</a>
-                    <a href="portofolio.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Portofolio</a>
-                    <a href="blog.html" class="block text-lg font-medium text-blue-600">Blog</a>
-                    <a href="kontak.html" class="block text-lg font-medium text-gray-600 hover:text-blue-600">Kontak</a>
-                    <a href="kontak.html" class="block mt-4 px-4 py-2 bg-blue-600 text-white rounded-md text-center">Konsultasi Gratis</a>
                 </div>
             </div>
         </div>
@@ -77,372 +39,412 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-bg text-white py-20">
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Blog & Insights</h1>
-                    <p class="text-xl text-blue-100 max-w-3xl mx-auto">
-                        Artikel teknologi, panduan pengembangan, dan insights terbaru dari tim Meda Technology
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 fade-in">Blog Meda Technology</h1>
+                    <p class="text-xl text-blue-100 mb-8 fade-in">
+                        Artikel terbaru tentang teknologi, tips pengembangan, dan insight industri digital
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="py-8 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                    <!-- Search Bar -->
+                    <div class="relative flex-1 max-w-md">
+                        <input 
+                            type="text" 
+                            id="search-input"
+                            placeholder="Cari artikel..." 
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                        <i data-lucide="search" class="absolute left-3 top-2.5 h-5 w-5 text-gray-400"></i>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="flex flex-wrap gap-2">
+                        <button class="category-filter active px-4 py-2 rounded-full bg-blue-600 text-white text-sm" data-category="all">
+                            Semua
+                        </button>
+                        <button class="category-filter px-4 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors text-sm" data-category="web-development">
+                            Web Development
+                        </button>
+                        <button class="category-filter px-4 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors text-sm" data-category="mobile-development">
+                            Mobile Development
+                        </button>
+                        <button class="category-filter px-4 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors text-sm" data-category="ui-ux">
+                            UI/UX Design
+                        </button>
+                        <button class="category-filter px-4 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors text-sm" data-category="tips">
+                            Tips & Tutorial
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Featured Article -->
-        <section class="py-20 bg-white">
+        <section class="py-12 bg-white">
             <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg overflow-hidden shadow-lg">
-                        <div class="grid grid-cols-1 lg:grid-cols-2">
-                            <div class="p-8 lg:p-12 text-white">
-                                <span class="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium mb-4">Featured</span>
-                                <h2 class="text-2xl lg:text-3xl font-bold mb-4">
-                                    Panduan Lengkap Transformasi Digital untuk UKM
-                                </h2>
-                                <p class="text-blue-100 mb-6">
-                                    Langkah-langkah praktis untuk mengimplementasikan teknologi digital dalam bisnis UKM, mulai dari digitalisasi proses hingga pemasaran online.
-                                </p>
-                                <div class="flex items-center text-sm text-blue-100 mb-6">
-                                    <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                    <span class="mr-4">15 Desember 2024</span>
-                                    <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                    <span>8 min read</span>
-                                </div>
-                                <a href="#" class="inline-flex items-center px-6 py-3 bg-white text-blue-600 hover:bg-gray-100 rounded-md font-medium transition-colors">
-                                    Baca Selengkapnya
-                                    <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
-                                </a>
+                <h2 class="text-2xl font-bold text-gray-900 mb-8 fade-in">Artikel Unggulan</h2>
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-hidden shadow-xl fade-in">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <div class="p-8 lg:p-12 text-white">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-500 rounded-full text-xs font-medium">Web Development</span>
+                                <span class="text-blue-200 text-sm">15 Desember 2024</span>
                             </div>
-                            <div class="relative h-64 lg:h-auto">
-                                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex items-center justify-center">
-                                    <i data-lucide="trending-up" class="h-24 w-24 text-white/50"></i>
+                            <h3 class="text-2xl lg:text-3xl font-bold mb-4">
+                                Panduan Lengkap Membangun Website E-commerce Modern dengan Next.js
+                            </h3>
+                            <p class="text-blue-100 mb-6 leading-relaxed">
+                                Pelajari cara membangun website e-commerce yang cepat, aman, dan SEO-friendly menggunakan Next.js, Stripe, dan teknologi modern lainnya.
+                            </p>
+                            <div class="flex items-center gap-4 mb-6">
+                                <img src="/placeholder.svg?height=40&width=40" alt="Author" class="w-10 h-10 rounded-full">
+                                <div>
+                                    <p class="font-medium">Ahmad Rizki</p>
+                                    <p class="text-blue-200 text-sm">Senior Developer</p>
                                 </div>
                             </div>
+                            <a href="#" class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+                                Baca Selengkapnya
+                                <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                            </a>
+                        </div>
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Featured Article" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Categories -->
+        <!-- Blog Articles Grid -->
         <section class="py-12 bg-gray-50">
             <div class="container mx-auto px-4">
-                <div class="flex flex-wrap justify-center gap-4">
-                    <button class="px-6 py-2 bg-blue-600 text-white rounded-full font-medium">Semua</button>
-                    <button class="px-6 py-2 bg-white text-gray-700 hover:bg-gray-100 rounded-full font-medium transition-colors">Web Development</button>
-                    <button class="px-6 py-2 bg-white text-gray-700 hover:bg-gray-100 rounded-full font-medium transition-colors">Mobile App</button>
-                    <button class="px-6 py-2 bg-white text-gray-700 hover:bg-gray-100 rounded-full font-medium transition-colors">UI/UX Design</button>
-                    <button class="px-6 py-2 bg-white text-gray-700 hover:bg-gray-100 rounded-full font-medium transition-colors">Tech Trends</button>
-                    <button class="px-6 py-2 bg-white text-gray-700 hover:bg-gray-100 rounded-full font-medium transition-colors">Case Study</button>
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 fade-in">Artikel Terbaru</h2>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm text-gray-600">Urutkan:</span>
+                        <select id="sort-select" class="px-3 py-1 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="newest">Terbaru</option>
+                            <option value="oldest">Terlama</option>
+                            <option value="popular">Terpopuler</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Blog Articles -->
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
                     <!-- Article 1 -->
-                    <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden card-hover">
-                        <div class="relative h-48 bg-gradient-to-br from-green-500 to-blue-600">
+                    <article class="blog-article bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="web-development" data-date="2024-12-10" data-views="1250">
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=200&width=400" alt="React Performance" class="w-full h-48 object-cover">
                             <div class="absolute top-4 left-4">
-                                <span class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-medium">Web Development</span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <i data-lucide="code" class="h-16 w-16 text-white/50"></i>
+                                <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium">Web Development</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">
-                                Best Practices untuk Progressive Web Apps (PWA)
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Panduan lengkap mengembangkan PWA yang performant dan user-friendly dengan teknologi modern.
-                            </p>
-                            <div class="flex items-center text-sm text-gray-500 mb-4">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span class="mr-4">10 Desember 2024</span>
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>6 min read</span>
+                            <div class="flex items-center gap-2 mb-3 text-sm text-gray-500">
+                                <i data-lucide="calendar" class="h-4 w-4"></i>
+                                <span>10 Desember 2024</span>
+                                <i data-lucide="eye" class="h-4 w-4 ml-2"></i>
+                                <span>1,250 views</span>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
-                                Baca Selengkapnya →
-                            </a>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                <a href="#">Optimasi Performance React: Tips dan Best Practices</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Pelajari teknik-teknik advanced untuk meningkatkan performa aplikasi React Anda, mulai dari code splitting hingga lazy loading.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="/placeholder.svg?height=32&width=32" alt="Author" class="w-8 h-8 rounded-full">
+                                    <span class="text-sm text-gray-600">Sarah Putri</span>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Baca →</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Article 2 -->
-                    <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden card-hover">
-                        <div class="relative h-48 bg-gradient-to-br from-purple-500 to-pink-600">
+                    <article class="blog-article bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="mobile-development" data-date="2024-12-08" data-views="980">
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=200&width=400" alt="Flutter vs React Native" class="w-full h-48 object-cover">
                             <div class="absolute top-4 left-4">
-                                <span class="bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-medium">UI/UX Design</span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <i data-lucide="palette" class="h-16 w-16 text-white/50"></i>
+                                <span class="px-3 py-1 bg-green-600 text-white rounded-full text-xs font-medium">Mobile Development</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">
-                                Tren Design System 2024: Konsistensi dalam Era Digital
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Mengapa design system menjadi kunci sukses produk digital dan bagaimana mengimplementasikannya.
-                            </p>
-                            <div class="flex items-center text-sm text-gray-500 mb-4">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span class="mr-4">8 Desember 2024</span>
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>5 min read</span>
+                            <div class="flex items-center gap-2 mb-3 text-sm text-gray-500">
+                                <i data-lucide="calendar" class="h-4 w-4"></i>
+                                <span>8 Desember 2024</span>
+                                <i data-lucide="eye" class="h-4 w-4 ml-2"></i>
+                                <span>980 views</span>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
-                                Baca Selengkapnya →
-                            </a>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                <a href="#">Flutter vs React Native: Mana yang Lebih Baik di 2024?</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Perbandingan mendalam antara Flutter dan React Native untuk membantu Anda memilih framework yang tepat untuk proyek mobile app.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="/placeholder.svg?height=32&width=32" alt="Author" class="w-8 h-8 rounded-full">
+                                    <span class="text-sm text-gray-600">Budi Santoso</span>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Baca →</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Article 3 -->
-                    <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden card-hover">
-                        <div class="relative h-48 bg-gradient-to-br from-orange-500 to-red-600">
+                    <article class="blog-article bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="ui-ux" data-date="2024-12-05" data-views="1450">
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=200&width=400" alt="UI/UX Trends" class="w-full h-48 object-cover">
                             <div class="absolute top-4 left-4">
-                                <span class="bg-white text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Mobile App</span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <i data-lucide="smartphone" class="h-16 w-16 text-white/50"></i>
+                                <span class="px-3 py-1 bg-purple-600 text-white rounded-full text-xs font-medium">UI/UX Design</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">
-                                React Native vs Flutter: Pilihan Terbaik untuk 2024
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Perbandingan mendalam antara React Native dan Flutter untuk pengembangan aplikasi mobile.
-                            </p>
-                            <div class="flex items-center text-sm text-gray-500 mb-4">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span class="mr-4">5 Desember 2024</span>
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>7 min read</span>
+                            <div class="flex items-center gap-2 mb-3 text-sm text-gray-500">
+                                <i data-lucide="calendar" class="h-4 w-4"></i>
+                                <span>5 Desember 2024</span>
+                                <i data-lucide="eye" class="h-4 w-4 ml-2"></i>
+                                <span>1,450 views</span>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
-                                Baca Selengkapnya →
-                            </a>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                <a href="#">Tren UI/UX Design 2024: Apa yang Perlu Diketahui Designer</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Eksplorasi tren terbaru dalam dunia UI/UX design, dari glassmorphism hingga voice user interface yang akan mendominasi tahun ini.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="/placeholder.svg?height=32&width=32" alt="Author" class="w-8 h-8 rounded-full">
+                                    <span class="text-sm text-gray-600">Lisa Wijaya</span>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Baca →</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Article 4 -->
-                    <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden card-hover">
-                        <div class="relative h-48 bg-gradient-to-br from-teal-500 to-blue-600">
+                    <article class="blog-article bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="tips" data-date="2024-12-03" data-views="2100">
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=200&width=400" alt="API Security" class="w-full h-48 object-cover">
                             <div class="absolute top-4 left-4">
-                                <span class="bg-white text-teal-600 px-3 py-1 rounded-full text-sm font-medium">Tech Trends</span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <i data-lucide="trending-up" class="h-16 w-16 text-white/50"></i>
+                                <span class="px-3 py-1 bg-orange-600 text-white rounded-full text-xs font-medium">Tips & Tutorial</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">
-                                AI dalam Pengembangan Software: Peluang dan Tantangan
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Bagaimana AI mengubah landscape pengembangan software dan apa yang perlu dipersiapkan developer.
-                            </p>
-                            <div class="flex items-center text-sm text-gray-500 mb-4">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span class="mr-4">3 Desember 2024</span>
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>9 min read</span>
+                            <div class="flex items-center gap-2 mb-3 text-sm text-gray-500">
+                                <i data-lucide="calendar" class="h-4 w-4"></i>
+                                <span>3 Desember 2024</span>
+                                <i data-lucide="eye" class="h-4 w-4 ml-2"></i>
+                                <span>2,100 views</span>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
-                                Baca Selengkapnya →
-                            </a>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                <a href="#">Keamanan API: Panduan Lengkap untuk Developer</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Tutorial komprehensif tentang cara mengamankan API Anda dari berbagai ancaman cyber, termasuk implementasi JWT dan rate limiting.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="/placeholder.svg?height=32&width=32" alt="Author" class="w-8 h-8 rounded-full">
+                                    <span class="text-sm text-gray-600">Ahmad Rizki</span>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Baca →</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Article 5 -->
-                    <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden card-hover">
-                        <div class="relative h-48 bg-gradient-to-br from-indigo-500 to-purple-600">
+                    <article class="blog-article bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="web-development" data-date="2024-12-01" data-views="1680">
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=200&width=400" alt="Database Optimization" class="w-full h-48 object-cover">
                             <div class="absolute top-4 left-4">
-                                <span class="bg-white text-indigo-600 px-3 py-1 rounded-full text-sm font-medium">Case Study</span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <i data-lucide="file-text" class="h-16 w-16 text-white/50"></i>
+                                <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium">Web Development</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">
-                                Studi Kasus: Implementasi ERP untuk Perusahaan Manufaktur
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Bagaimana kami membantu klien meningkatkan efisiensi operasional hingga 40% dengan sistem ERP custom.
-                            </p>
-                            <div class="flex items-center text-sm text-gray-500 mb-4">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span class="mr-4">1 Desember 2024</span>
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>10 min read</span>
+                            <div class="flex items-center gap-2 mb-3 text-sm text-gray-500">
+                                <i data-lucide="calendar" class="h-4 w-4"></i>
+                                <span>1 Desember 2024</span>
+                                <i data-lucide="eye" class="h-4 w-4 ml-2"></i>
+                                <span>1,680 views</span>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
-                                Baca Selengkapnya →
-                            </a>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                <a href="#">Optimasi Database untuk Aplikasi Web Skala Besar</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Strategi dan teknik untuk mengoptimalkan performa database pada aplikasi web dengan traffic tinggi dan data yang besar.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="/placeholder.svg?height=32&width=32" alt="Author" class="w-8 h-8 rounded-full">
+                                    <span class="text-sm text-gray-600">Sarah Putri</span>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Baca →</a>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Article 6 -->
-                    <article class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden card-hover">
-                        <div class="relative h-48 bg-gradient-to-br from-yellow-500 to-orange-600">
+                    <article class="blog-article bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="tips" data-date="2024-11-28" data-views="890">
+                        <div class="relative">
+                            <img src="/placeholder.svg?height=200&width=400" alt="Git Workflow" class="w-full h-48 object-cover">
                             <div class="absolute top-4 left-4">
-                                <span class="bg-white text-yellow-600 px-3 py-1 rounded-full text-sm font-medium">Web Development</span>
-                            </div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <i data-lucide="server" class="h-16 w-16 text-white/50"></i>
+                                <span class="px-3 py-1 bg-orange-600 text-white rounded-full text-xs font-medium">Tips & Tutorial</span>
                             </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-3">
-                                Microservices Architecture: Kapan dan Bagaimana Menggunakannya
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Panduan praktis untuk memutuskan apakah microservices cocok untuk proyek Anda dan cara implementasinya.
-                            </p>
-                            <div class="flex items-center text-sm text-gray-500 mb-4">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span class="mr-4">28 November 2024</span>
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>8 min read</span>
+                            <div class="flex items-center gap-2 mb-3 text-sm text-gray-500">
+                                <i data-lucide="calendar" class="h-4 w-4"></i>
+                                <span>28 November 2024</span>
+                                <i data-lucide="eye" class="h-4 w-4 ml-2"></i>
+                                <span>890 views</span>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
-                                Baca Selengkapnya →
-                            </a>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                <a href="#">Git Workflow untuk Tim Development: Best Practices</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Panduan lengkap menggunakan Git untuk kolaborasi tim development, termasuk branching strategy dan code review process.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <img src="/placeholder.svg?height=32&width=32" alt="Author" class="w-8 h-8 rounded-full">
+                                    <span class="text-sm text-gray-600">Budi Santoso</span>
+                                </div>
+                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Baca →</a>
+                            </div>
                         </div>
                     </article>
+
                 </div>
 
                 <!-- Load More Button -->
                 <div class="text-center mt-12">
-                    <button class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-colors">
-                        Muat Artikel Lainnya
+                    <button id="load-more-btn" class="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                        Muat Lebih Banyak
                     </button>
                 </div>
             </div>
         </section>
 
-        <!-- Newsletter Subscription -->
-        <section class="py-20 bg-blue-900 text-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Dapatkan Update Terbaru</h2>
-                    <p class="text-xl text-blue-100 mb-8">
-                        Subscribe newsletter kami untuk mendapatkan artikel teknologi terbaru dan insights dari tim Meda Technology.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                        <input 
-                            type="email" 
-                            placeholder="Masukkan email Anda" 
-                            class="flex-1 px-4 py-3 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                        >
-                        <button class="px-6 py-3 bg-white text-blue-900 hover:bg-gray-100 rounded-md font-medium transition-colors">
-                            Subscribe
-                        </button>
-                    </div>
-                    <p class="text-sm text-blue-200 mt-4">
-                        Kami menghargai privasi Anda. Unsubscribe kapan saja.
-                    </p>
-                </div>
+        <!-- Newsletter Section -->
+        <section class="py-16 bg-blue-600 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4 fade-in">Dapatkan Update Artikel Terbaru</h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto fade-in">
+                    Subscribe newsletter kami dan dapatkan artikel terbaru tentang teknologi dan tips development langsung di inbox Anda.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto" id="newsletter-form">
+                    <input 
+                        type="email" 
+                        placeholder="Masukkan email Anda" 
+                        required
+                        class="flex-1 px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                    >
+                    <button type="submit" class="px-6 py-3 bg-white text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-        <div class="container mx-auto px-4 py-16">
+    <footer class="bg-gray-900 text-white" role="contentinfo">
+        <div class="container mx-auto px-4 py-16 lg:px-0">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Company Info -->
-                <div class="space-y-4">
-                    <a href="index.html" class="flex items-center space-x-3">
-                        <img src="assets/logo.png" alt="Meda Technology" class="h-8 w-auto">
+                <div class="space-y-4 pl-0 md:pl-2 lg:pl-2 -ml-4">
+                    <a href="index.html" class="flex items-center space-x-3" aria-label="Meda Technology - Beranda">
+                        <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto" width="200" height="100">
                     </a>
                     <p class="text-gray-300 text-sm leading-relaxed">
-                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan.
+                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan sejak 2020.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                        <a href="https://facebook.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook Meda Technology">
                             <i data-lucide="facebook" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                        <a href="https://twitter.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Twitter Meda Technology">
                             <i data-lucide="twitter" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                        <a href="https://instagram.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Instagram Meda Technology">
                             <i data-lucide="instagram" class="h-5 w-5"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                        <a href="https://linkedin.com/company/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn Meda Technology">
                             <i data-lucide="linkedin" class="h-5 w-5"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Services -->
-                <div>
+                <div class="lg:pl-7">
                     <h3 class="text-lg font-semibold mb-4">Layanan</h3>
-                    <ul class="space-y-2">
-                        <li><a href="layanan.html#web-development" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
-                        <li><a href="layanan.html#mobile-app" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile App Development</a></li>
-                        <li><a href="layanan.html#custom-software" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
-                        <li><a href="layanan.html#ui-ux-design" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
-                        <li><a href="layanan.html#api-development" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
-                        <li><a href="layanan.html#konsultasi-it" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
-                    </ul>
+                    <nav aria-label="Footer services navigation">
+                        <ul class="space-y-2">
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile Development</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
+                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
                 <!-- Quick Links -->
-                <div>
+                <div class="lg:pl-6">
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
-                        <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
-                        <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
-                        <li><a href="karir.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
-                        <li><a href="faq.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
-                        <li><a href="privacy.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
-                    </ul>
+                    <nav aria-label="Footer quick links navigation">
+                        <ul class="space-y-2">
+                            <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
+                            <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
+                            <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
                 <!-- Contact & Newsletter -->
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <div class="space-y-3 text-sm">
+                    <address class="space-y-3 text-sm not-italic">
                         <div class="flex items-start space-x-2">
-                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
                             <div>
                                 <p class="text-gray-300">Surabaya:</p>
-                                <p class="text-gray-400">Twin Tower Hotel Lt. 6, Jl. Kalisari I No. 1</p>
+                                <p class="text-gray-400">Jl.Pudak No.5</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-2">
-                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0"></i>
+                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
                             <div>
-                                <p class="text-gray-300">Jakarta:</p>
+                                <p class="text-gray-300">Jogjakarta:</p>
                                 <p class="text-gray-400">Wisma Geha Lt. 4, Jl Timor no.25</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <i data-lucide="phone" class="h-4 w-4 text-blue-400"></i>
-                            <span class="text-gray-300">+62 812-3456-7890</span>
+                            <i data-lucide="phone" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
+                            <a href="tel:+6281234567890" class="text-gray-300 hover:text-blue-400 transition-colors">+62 812-3456-7890</a>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <i data-lucide="mail" class="h-4 w-4 text-blue-400"></i>
-                            <span class="text-gray-300">info@medatechnology.id</span>
+                            <i data-lucide="mail" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
+                            <a href="mailto:info@medatechnology.id" class="text-gray-300 hover:text-blue-400 transition-colors">info@medatechnology.id</a>
                         </div>
-                    </div>
-
-                    <div class="mt-6">
-                        <h4 class="font-medium mb-2">Newsletter</h4>
-                        <div class="flex space-x-2">
-                            <input type="email" placeholder="Email Anda" class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-md text-sm">
-                            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm transition-colors">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
+                    </address>
                 </div>
             </div>
         </div>
@@ -452,55 +454,17 @@
             <div class="container mx-auto px-4 py-6">
                 <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                     <p>&copy; 2024 Meda Technology. All rights reserved.</p>
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                        <a href="terms.html" class="hover:text-blue-400 transition-colors">Terms of Service</a>
-                        <a href="sitemap.html" class="hover:text-blue-400 transition-colors">Sitemap</a>
-                    </div>
+                    <nav class="flex space-x-6 mt-4 md:mt-0" aria-label="Footer legal navigation">
+                        <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-blue-400 transition-colors">Sitemap</a>
+                    </nav>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Mobile menu functionality
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuClose = document.getElementById('mobile-menu-close');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('active');
-        });
-
-        mobileMenuClose.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Category filter functionality
-        const categoryButtons = document.querySelectorAll('section:nth-of-type(3) button');
-        categoryButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                categoryButtons.forEach(btn => {
-                    btn.classList.remove('bg-blue-600', 'text-white');
-                    btn.classList.add('bg-white', 'text-gray-700');
-                });
-                
-                // Add active class to clicked button
-                button.classList.remove('bg-white', 'text-gray-700');
-                button.classList.add('bg-blue-600', 'text-white');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
 </body>
 </html>
