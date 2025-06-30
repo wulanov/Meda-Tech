@@ -302,20 +302,20 @@ style.textContent = animationCSS
 document.head.appendChild(style)
 
 // Loading animation for images
-function initializeImageLoading() {
-  const images = document.querySelectorAll("img")
+// function initializeImageLoading() {
+//   const images = document.querySelectorAll("img")
 
-  images.forEach((img) => {
-    img.addEventListener("load", () => {
-      img.style.opacity = "1"
-      img.style.transform = "scale(1)"
-    })
+//   images.forEach((img) => {
+//     img.addEventListener("load", () => {
+//       img.style.opacity = "1"
+//       img.style.transform = "scale(1)"
+//     })
 
-    // Set initial state
-    img.style.opacity = "0"
-    img.style.transform = "scale(1.05)"
-    img.style.transition = "all 0.6s ease-out"
-  })
-}
+//     // Set initial state
+//     img.style.opacity = "0"
+//     img.style.transform = "scale(1.05)"
+//     img.style.transition = "all 0.6s ease-out"
+//   })
+// }
 
-initializeImageLoading()
+// initializeImageLoading()
