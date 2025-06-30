@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - Meda Technology</title>
-    <meta name="description" content="Mengenal lebih dekat Meda Technology, perusahaan teknologi terpercaya dengan pengalaman 10+ tahun dalam transformasi digital bisnis.">
+    <meta name="description" content="Mengenal lebih dekat Meda Technology, perusahaan teknologi terpercaya yang berdiri sejak 2020 untuk transformasi digital bisnis Anda.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
     <style>
         .hero-about {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/placeholder.svg?height=600&width=1200');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .count-up {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .core-value-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .core-value-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+        
+        .core-value-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .core-value-card:hover .core-value-icon {
+            transform: scale(1.2) rotate(5deg);
         }
     </style>
 </head>
 
 <body class="bg-white">
-    <!-- Header (sama seperti index.html) -->
-    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur" role="banner">
         <div class="container mx-auto px-4">
             <div class="flex h-16 items-center justify-between">
-                <a href="/" class="flex items-center space-x-3">
-                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto">
+                <a href="index.html" class="flex items-center space-x-3" aria-label="Meda Technology - Beranda">
+                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto" width="120" height="40">
                 </a>
 
                 <nav class="flex items-center space-x-8">
@@ -45,125 +68,251 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-about text-white py-20">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 fade-in">Tentang Meda Technology</h1>
-                    <p class="text-xl text-blue-100 mb-8 fade-in">
-                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda sejak 2020
-                    </p>
-                </div>
-            </div>
+        <section class="min-h-screen flex items-center justify-center text-white relative bg-cover bg-center" style="background-image: url('assets/bg2.jpg');">
+        <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">About Us</h1>
+            <div class="w-24 h-1 bg-blue-500 mx-auto fade-in"></div>
+        </div>
         </section>
 
-        <!-- Company Story -->
+
+        <!-- About Meda Technology -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="slide-in-left">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Cerita Kami</h2>
-                        <p class="text-gray-600 mb-4">
-                            Meda Technology didirikan pada tahun 2020 dengan visi menjadi partner teknologi terdepan dalam transformasi digital bisnis di Indonesia. Kami memulai perjalanan dengan tim kecil yang berpengalaman di bidang teknologi informasi.
-                        </p>
-                        <p class="text-gray-600 mb-4">
-                            Dalam perjalanan 4+ tahun, kami telah melayani lebih dari 200+ klien dari berbagai industri, mulai dari startup hingga perusahaan multinasional. Kepercayaan klien adalah aset terbesar kami.
-                        </p>
-                        <p class="text-gray-600">
-                            Kami terus berinovasi dan mengadopsi teknologi terbaru untuk memberikan solusi terbaik bagi setiap klien. Tim kami terdiri dari developer, designer, dan konsultan IT berpengalaman yang siap membantu mewujudkan visi digital Anda.
-                        </p>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Solusi Digital Andal untuk Pertumbuhan Bisnis</h2>
+                        
+                        <div class="space-y-6 text-gray-600 leading-relaxed">
+                            <p class="text-lg">
+                                Meda Technology berdiri pada tahun 2020 dengan visi menjadi mitra transformasi digital terdepan di Indonesia. Kami percaya bahwa teknologi dapat mengubah cara bisnis beroperasi dan berkembang, dan itulah yang menjadi dasar dari setiap solusi yang kami tawarkan.
+                            </p>
+                            
+                            <p class="text-lg">
+                                Dengan tim kecil namun berpengalaman, kami fokus pada kualitas dan inovasi dalam setiap proyek yang kami tangani. Pengalaman bertahun-tahun di industri teknologi memungkinkan kami memahami kebutuhan unik setiap klien dan memberikan solusi yang tepat sasaran.
+                            </p>
+                        </div>
                     </div>
+                    
                     <div class="slide-in-right">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Tim Meda Technology" class="rounded-lg shadow-lg">
+                        <div class="relative">
+                            <!-- Ganti dengan vektor/ilustrasi -->
+                            <div class="w-full h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center">
+                                <svg viewBox="0 0 400 300" class="w-full h-full max-w-md">
+                                    <!-- Technology Vector Illustration -->
+                                    <defs>
+                                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Laptop -->
+                                    <rect x="100" y="150" width="200" height="120" rx="10" fill="url(#grad1)" opacity="0.8"/>
+                                    <rect x="110" y="160" width="180" height="100" rx="5" fill="white"/>
+                                    <rect x="120" y="170" width="160" height="80" rx="3" fill="#F3F4F6"/>
+                                    
+                                    <!-- Screen content -->
+                                    <rect x="130" y="180" width="140" height="4" rx="2" fill="#3B82F6"/>
+                                    <rect x="130" y="190" width="100" height="4" rx="2" fill="#6B7280"/>
+                                    <rect x="130" y="200" width="120" height="4" rx="2" fill="#6B7280"/>
+                                    
+                                    <!-- Floating elements -->
+                                    <circle cx="80" cy="100" r="15" fill="#10B981" opacity="0.7"/>
+                                    <rect x="320" y="80" width="30" height="30" rx="5" fill="#F59E0B" opacity="0.7"/>
+                                    <polygon points="350,140 370,120 370,160" fill="#EF4444" opacity="0.7"/>
+                                    
+                                    <!-- Connection lines -->
+                                    <path d="M 95 100 Q 150 50 200 100" stroke="#3B82F6" stroke-width="2" fill="none" opacity="0.5"/>
+                                    <path d="M 320 95 Q 280 120 250 150" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.5"/>
+                                </svg>
+                            </div>
+                            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600 rounded-2xl opacity-20"></div>
+                            <div class="absolute -top-6 -left-6 w-24 h-24 bg-blue-400 rounded-full opacity-30"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Stats -->
-        <section class="py-20 bg-blue-50">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="200">0</div>
-                        <p class="text-gray-600">Klien Terlayani</p>
-                    </div>
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="300">0</div>
-                        <p class="text-gray-600">Proyek Selesai</p>
-                    </div>
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="4">0</div>
-                        <p class="text-gray-600">Tahun Pengalaman</p>
-                    </div>
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="15">0</div>
-                        <p class="text-gray-600">Tim Ahli</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team -->
-        <section class="py-20 bg-white">
+        <!-- Statistics -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 fade-in">Tim Kami</h2>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4 fade-in">Pencapaian Kami</h2>
                     <p class="text-xl text-gray-600 max-w-2xl mx-auto fade-in">
-                        Bertemu dengan tim profesional yang siap membantu mewujudkan visi digital Anda
+                        Angka-angka yang menunjukkan dedikasi dan kepercayaan klien terhadap layanan kami
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="stats-card bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
+                            <i data-lucide="users" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div class="count-up text-5xl font-bold text-blue-600 mb-2" data-target="200">0</div>
+                        <p class="text-gray-600 font-medium text-lg">Klien Terlayani</p>
+                        <div class="w-full h-1 bg-gray-200 rounded-full mt-4 overflow-hidden">
+                            <div class="stats-progress h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transform -translate-x-full transition-transform duration-1000"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-card bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center">
+                            <i data-lucide="calendar" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div class="count-up text-5xl font-bold text-green-600 mb-2" data-target="4">0</div>
+                        <p class="text-gray-600 font-medium text-lg">Tahun Pengalaman</p>
+                        <div class="w-full h-1 bg-gray-200 rounded-full mt-4 overflow-hidden">
+                            <div class="stats-progress h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full transform -translate-x-full transition-transform duration-1000 delay-300"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-card bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <div class="count-up text-5xl font-bold text-purple-600 mb-2" data-target="50">0</div>
+                        <p class="text-gray-600 font-medium text-lg">Proyek Diselesaikan</p>
+                        <div class="w-full h-1 bg-gray-200 rounded-full mt-4 overflow-hidden">
+                            <div class="stats-progress h-full bg-gradient-to-r from-purple-500 to-purple-600 rounded-full transform -translate-x-full transition-transform duration-1000 delay-600"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="slide-in-left">
+                        <div class="relative">
+                            <!-- Ganti dengan ilustrasi visi misi -->
+                            <div class="w-full h-96 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl flex items-center justify-center">
+                                <svg viewBox="0 0 400 300" class="w-full h-full max-w-md">
+                                    <defs>
+                                        <linearGradient id="visionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    
+                                    <!-- Target/Vision symbol -->
+                                    <circle cx="200" cy="150" r="80" fill="none" stroke="url(#visionGrad)" stroke-width="4" opacity="0.3"/>
+                                    <circle cx="200" cy="150" r="60" fill="none" stroke="url(#visionGrad)" stroke-width="4" opacity="0.5"/>
+                                    <circle cx="200" cy="150" r="40" fill="none" stroke="url(#visionGrad)" stroke-width="4" opacity="0.7"/>
+                                    <circle cx="200" cy="150" r="20" fill="url(#visionGrad)"/>
+                                    
+                                    <!-- Arrow pointing to target -->
+                                    <path d="M 120 80 L 180 140" stroke="#EF4444" stroke-width="4" fill="none"/>
+                                    <polygon points="175,135 185,140 175,145" fill="#EF4444"/>
+                                    
+                                    <!-- Growth chart -->
+                                    <path d="M 50 250 L 80 220 L 110 200 L 140 180 L 170 160" stroke="#10B981" stroke-width="3" fill="none"/>
+                                    <circle cx="50" cy="250" r="4" fill="#10B981"/>
+                                    <circle cx="80" cy="220" r="4" fill="#10B981"/>
+                                    <circle cx="110" cy="200" r="4" fill="#10B981"/>
+                                    <circle cx="140" cy="180" r="4" fill="#10B981"/>
+                                    <circle cx="170" cy="160" r="4" fill="#10B981"/>
+                                </svg>
+                            </div>
+                            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl opacity-20"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide-in-right space-y-12">
+                        <div class="vision-card p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border-l-4 border-blue-500">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
+                                    <i data-lucide="eye" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Visi Kami</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Menjadi mitra transformasi digital terbaik yang membantu bisnis berkembang melalui solusi teknologi inovatif dan berkelanjutan.
+                            </p>
+                        </div>
+                        
+                        <div class="mission-card p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl border-l-4 border-green-500">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mr-4">
+                                    <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">Misi Kami</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Fokus pada pengembangan solusi digital premium yang efisien dan inovatif, dengan mengutamakan kepuasan klien dan kualitas hasil yang berkelanjutan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4 fade-in">Nilai-Nilai Kami</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto fade-in">
+                        Prinsip-prinsip yang menjadi kekuatan kemajuan kami
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center fade-in">
-                        <img src="/placeholder.svg?height=200&width=200" alt="CEO" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Ahmad Rizki</h3>
-                        <p class="text-blue-600 mb-2">CEO & Founder</p>
-                        <p class="text-gray-600 text-sm">10+ tahun pengalaman dalam teknologi dan bisnis digital</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- Integrity -->
+                    <div class="core-value-card bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl">
+                        <div class="core-value-icon text-6xl mb-4">💡</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Kami berkomitmen pada kejujuran dan transparansi dalam setiap aspek bisnis dan hubungan dengan klien.
+                        </p>
+                        <div class="mt-4 w-12 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto"></div>
                     </div>
-                    <div class="text-center fade-in">
-                        <img src="/placeholder.svg?height=200&width=200" alt="CTO" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Putri</h3>
-                        <p class="text-blue-600 mb-2">CTO</p>
-                        <p class="text-gray-600 text-sm">Expert dalam arsitektur sistem dan pengembangan aplikasi</p>
+
+                    <!-- Resilience -->
+                    <div class="core-value-card bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl">
+                        <div class="core-value-icon text-6xl mb-4">🛡️</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Resilience</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Ketahanan dalam menghadapi tantangan dan kemampuan beradaptasi dengan perubahan teknologi yang cepat.
+                        </p>
+                        <div class="mt-4 w-12 h-1 bg-gradient-to-r from-green-500 to-blue-600 rounded-full mx-auto"></div>
                     </div>
-                    <div class="text-center fade-in">
-                        <img src="/placeholder.svg?height=200&width=200" alt="Lead Designer" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Budi Santoso</h3>
-                        <p class="text-blue-600 mb-2">Lead Designer</p>
-                        <p class="text-gray-600 text-sm">Spesialis UI/UX dengan pengalaman di berbagai industri</p>
+
+                    <!-- Innovation -->
+                    <div class="core-value-card bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl">
+                        <div class="core-value-icon text-6xl mb-4">🚀</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Selalu mencari cara baru dan kreatif untuk memberikan solusi teknologi yang lebih baik dan efektif.
+                        </p>
+                        <div class="mt-4 w-12 h-1 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full mx-auto"></div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Values -->
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 fade-in">Nilai-Nilai Kami</h2>
-                </div>
+                <!-- Row kedua untuk Collaboration dan Impact di tengah -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mt-6">
+                    <!-- Collaboration -->
+                    <div class="core-value-card bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl">
+                        <div class="core-value-icon text-6xl mb-4">🤝</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Collaboration</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Membangun kemitraan yang kuat dengan klien dan tim internal untuk mencapai hasil terbaik bersama.
+                        </p>
+                        <div class="mt-4 w-12 h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mx-auto"></div>
+                    </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center p-6 fade-in">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="heart" class="w-8 h-8 text-blue-600"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Integritas</h3>
-                        <p class="text-gray-600">Kami berkomitmen untuk selalu jujur dan transparan dalam setiap layanan yang kami berikan</p>
-                    </div>
-                    <div class="text-center p-6 fade-in">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="zap" class="w-8 h-8 text-blue-600"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Inovasi</h3>
-                        <p class="text-gray-600">Selalu mengadopsi teknologi terbaru untuk memberikan solusi terdepan</p>
-                    </div>
-                    <div class="text-center p-6 fade-in">
-                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Kolaborasi</h3>
-                        <p class="text-gray-600">Bekerja sama dengan klien sebagai partner untuk mencapai tujuan bersama</p>
+                    <!-- Impact -->
+                    <div class="core-value-card bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-2xl">
+                        <div class="core-value-icon text-6xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Impact</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Menciptakan dampak positif yang nyata bagi bisnis klien melalui solusi teknologi yang tepat guna.
+                        </p>
+                        <div class="mt-4 w-12 h-1 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full mx-auto"></div>
                     </div>
                 </div>
             </div>
@@ -171,105 +320,39 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white" role="contentinfo">
-        <div class="container mx-auto px-4 py-16 lg:px-0">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div class="space-y-4 pl-0 md:pl-2 lg:pl-2 -ml-4">
-                    <a href="index.html" class="flex items-center space-x-3" aria-label="Meda Technology - Beranda">
-                        <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto" width="200" height="100">
-                    </a>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan sejak 2020.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://facebook.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook Meda Technology">
-                            <i data-lucide="facebook" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://twitter.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Twitter Meda Technology">
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://instagram.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Instagram Meda Technology">
-                            <i data-lucide="instagram" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://linkedin.com/company/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn Meda Technology">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
-                        </a>
-                    </div>
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-8 w-auto">
+                    <p class="text-gray-300 text-sm">Partner teknologi terpercaya untuk transformasi digital bisnis Anda.</p>
                 </div>
-
-                <!-- Services -->
-                <div class="lg:pl-7">
+                <div>
                     <h3 class="text-lg font-semibold mb-4">Layanan</h3>
-                    <nav aria-label="Footer services navigation">
-                        <ul class="space-y-2">
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile Development</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
-                        </ul>
-                    </nav>
+                    <ul class="space-y-2">
+                        <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 text-sm">Web Development</a></li>
+                        <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 text-sm">Mobile Development</a></li>
+                        <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 text-sm">Custom Software</a></li>
+                    </ul>
                 </div>
-
-                <!-- Quick Links -->
-                <div class="lg:pl-6">
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <nav aria-label="Footer quick links navigation">
-                        <ul class="space-y-2">
-                            <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
-                            <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
-                            <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
-                        </ul>
-                    </nav>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Perusahaan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 text-sm">Tentang Kami</a></li>
+                        <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 text-sm">Portofolio</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 text-sm">Blog</a></li>
+                    </ul>
                 </div>
-
-                <!-- Contact & Newsletter -->
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <address class="space-y-3 text-sm not-italic">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
-                            <div>
-                                <p class="text-gray-300">Surabaya:</p>
-                                <p class="text-gray-400">Jl.Pudak No.5</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
-                            <div>
-                                <p class="text-gray-300">Jogjakarta:</p>
-                                <p class="text-gray-400">Wisma Geha Lt. 4, Jl Timor no.25</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="phone" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
-                            <a href="tel:+6281234567890" class="text-gray-300 hover:text-blue-400 transition-colors">+62 812-3456-7890</a>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="mail" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
-                            <a href="mailto:info@medatechnology.id" class="text-gray-300 hover:text-blue-400 transition-colors">info@medatechnology.id</a>
-                        </div>
-                    </address>
+                    <p class="text-gray-300 text-sm">info@medatechnology.id</p>
+                    <p class="text-gray-300 text-sm">+62 812-3456-7890</p>
                 </div>
             </div>
         </div>
-
-        <!-- Bottom Bar -->
         <div class="border-t border-gray-800">
-            <div class="container mx-auto px-4 py-6">
-                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-                    <p>&copy; 2024 Meda Technology. All rights reserved.</p>
-                    <nav class="flex space-x-6 mt-4 md:mt-0" aria-label="Footer legal navigation">
-                        <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                        <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
-                        <a href="#" class="hover:text-blue-400 transition-colors">Sitemap</a>
-                    </nav>
-                </div>
+            <div class="container mx-auto px-4 py-6 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Meda Technology. All rights reserved.</p>
             </div>
         </div>
     </footer>
