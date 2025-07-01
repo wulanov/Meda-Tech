@@ -1,394 +1,102 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Meda Technology</title>
-    <meta name="description" content="Lihat portofolio proyek-proyek terbaik Meda Technology dalam web development, mobile app, dan custom software development.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Meda Technology</title>
+  <meta name="description" content="Lihat portofolio terbaik Meda Technology: Meda School dan TickTock App.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
-<body class="bg-white">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
-        <div class="container mx-auto px-4">
-            <div class="flex h-16 items-center justify-between">
-                <a href="/" class="flex items-center space-x-3">
-                    <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto">
-                </a>
-
-                <nav class="flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Beranda</a>
-                    <a href="tentang-kami.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Tentang Kami</a>
-                    <a href="layanan.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Layanan</a>
-                    <a href="portofolio.html" class="text-blue-600 font-medium">Portofolio</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Blog</a>
-                    <a href="kontak.html" class="text-gray-600 hover:text-blue-600 transition-colors font-medium">Kontak</a>
-                </nav>
-
-                <div class="flex items-center space-x-4">
-                    <a href="kontak.html" class="px-4 py-2 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-md transition-colors">
-                        Konsultasi Gratis
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-6 fade-in">Portofolio Kami</h1>
-                    <p class="text-xl text-blue-100 mb-8 fade-in">
-                        Lihat hasil karya terbaik kami dalam mengembangkan solusi digital untuk berbagai industri
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Filter -->
-        <section class="py-8 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-wrap justify-center gap-4">
-                    <button class="portfolio-filter active px-6 py-2 rounded-full bg-blue-600 text-white" data-filter="all">
-                        Semua Proyek
-                    </button>
-                    <button class="portfolio-filter px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors" data-filter="website">
-                        Website
-                    </button>
-                    <button class="portfolio-filter px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors" data-filter="mobile">
-                        Mobile App
-                    </button>
-                    <button class="portfolio-filter px-6 py-2 rounded-full bg-white text-gray-600 hover:bg-blue-600 hover:text-white transition-colors" data-filter="software">
-                        Custom Software
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Grid -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
-                    
-                    <!-- Project 1 -->
-                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="website">
-                        <div class="relative group">
-                            <img src="/placeholder.svg?height=250&width=400" alt="E-commerce Fashion" class="w-full h-48 object-cover">
-                            <div class="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                                <button class="portfolio-detail-btn opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-blue-600 rounded-md font-medium transition-all" data-project="ecommerce-fashion">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">E-commerce Fashion</h3>
-                            <p class="text-gray-600 text-sm mb-3">Platform jual beli fashion online dengan fitur lengkap dan payment gateway terintegrasi.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">React.js</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">Node.js</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">MongoDB</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">PT Fashion Indonesia</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Live Demo →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="mobile">
-                        <div class="relative group">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Food Delivery App" class="w-full h-48 object-cover">
-                            <div class="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                                <button class="portfolio-detail-btn opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-blue-600 rounded-md font-medium transition-all" data-project="food-delivery">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Food Delivery App</h3>
-                            <p class="text-gray-600 text-sm mb-3">Aplikasi pesan antar makanan dengan real-time tracking dan multiple payment options.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">Flutter</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">Firebase</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">Google Maps</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">FoodieGo</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Play Store →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="software">
-                        <div class="relative group">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Hospital Management System" class="w-full h-48 object-cover">
-                            <div class="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                                <button class="portfolio-detail-btn opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-blue-600 rounded-md font-medium transition-all" data-project="hospital-system">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Hospital Management System</h3>
-                            <p class="text-gray-600 text-sm mb-3">Sistem manajemen rumah sakit lengkap dengan modul pasien, dokter, dan inventory.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">Laravel</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">MySQL</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">Vue.js</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">RS Sehat Sentosa</span>
-                                <span class="text-blue-600 text-sm font-medium">Private System</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="website">
-                        <div class="relative group">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Corporate Website" class="w-full h-48 object-cover">
-                            <div class="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                                <button class="portfolio-detail-btn opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-blue-600 rounded-md font-medium transition-all" data-project="corporate-website">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Corporate Website</h3>
-                            <p class="text-gray-600 text-sm mb-3">Website perusahaan multinasional dengan multi-language dan CMS terintegrasi.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">Next.js</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">Strapi</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">PostgreSQL</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">PT Global Solutions</span>
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">Live Demo →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="mobile">
-                        <div class="relative group">
-                            <img src="/placeholder.svg?height=250&width=400" alt="Banking App" class="w-full h-48 object-cover">
-                            <div class="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                                <button class="portfolio-detail-btn opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-blue-600 rounded-md font-medium transition-all" data-project="banking-app">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Mobile Banking App</h3>
-                            <p class="text-gray-600 text-sm mb-3">Aplikasi mobile banking dengan keamanan tinggi dan fitur transfer real-time.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">React Native</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">Node.js</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">Encryption</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">Bank Digital Nusantara</span>
-                                <span class="text-blue-600 text-sm font-medium">Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 6 -->
-                    <div class="portfolio-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all fade-in" data-category="software">
-                        <div class="relative group">
-                            <img src="/placeholder.svg?height=250&width=400" alt="ERP System" class="w-full h-48 object-cover">
-                            <div class="absolute inset-0 bg-blue-600 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-300 flex items-center justify-center">
-                                <button class="portfolio-detail-btn opacity-0 group-hover:opacity-100 px-4 py-2 bg-white text-blue-600 rounded-md font-medium transition-all" data-project="erp-system">
-                                    Lihat Detail
-                                </button>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">ERP Manufacturing</h3>
-                            <p class="text-gray-600 text-sm mb-3">Sistem ERP lengkap untuk industri manufaktur dengan modul produksi dan inventory.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">Java Spring</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">Oracle DB</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">Angular</span>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">PT Manufaktur Jaya</span>
-                                <span class="text-blue-600 text-sm font-medium">Enterprise System</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="py-20 bg-blue-50">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4 fade-in">Pencapaian Kami</h2>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="300">0</div>
-                        <p class="text-gray-600">Proyek Selesai</p>
-                    </div>
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="200">0</div>
-                        <p class="text-gray-600">Klien Puas</p>
-                    </div>
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="50">0</div>
-                        <p class="text-gray-600">Awards</p>
-                    </div>
-                    <div class="fade-in">
-                        <div class="text-4xl font-bold text-blue-600 mb-2" data-count="99">0</div>
-                        <p class="text-gray-600">% Success Rate</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white" role="contentinfo">
-        <div class="container mx-auto px-4 py-16 lg:px-0">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div class="space-y-4 pl-0 md:pl-2 lg:pl-2 -ml-4">
-                    <a href="index.html" class="flex items-center space-x-3" aria-label="Meda Technology - Beranda">
-                        <img src="assets/logo.png" alt="Logo Meda Technology" class="h-10 w-auto" width="200" height="100">
-                    </a>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Partner teknologi terpercaya untuk transformasi digital bisnis Anda. Kami menghadirkan solusi inovatif dengan teknologi terdepan sejak 2020.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="https://facebook.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Facebook Meda Technology">
-                            <i data-lucide="facebook" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://twitter.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Twitter Meda Technology">
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://instagram.com/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Instagram Meda Technology">
-                            <i data-lucide="instagram" class="h-5 w-5"></i>
-                        </a>
-                        <a href="https://linkedin.com/company/medatechnology" class="text-gray-400 hover:text-blue-400 transition-colors" aria-label="LinkedIn Meda Technology">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Services -->
-                <div class="lg:pl-7">
-                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
-                    <nav aria-label="Footer services navigation">
-                        <ul class="space-y-2">
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Web Development</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Mobile Development</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Custom Software</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">UI/UX Design</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">API Development</a></li>
-                            <li><a href="layanan.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Konsultasi IT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="lg:pl-6">
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <nav aria-label="Footer quick links navigation">
-                        <ul class="space-y-2">
-                            <li><a href="tentang-kami.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Tentang Kami</a></li>
-                            <li><a href="portofolio.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Portofolio</a></li>
-                            <li><a href="blog.html" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Blog</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Karir</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">FAQ</a></li>
-                            <li><a href="#" class="text-gray-300 hover:text-blue-400 transition-colors text-sm">Privacy Policy</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Contact & Newsletter -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
-                    <address class="space-y-3 text-sm not-italic">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
-                            <div>
-                                <p class="text-gray-300">Surabaya:</p>
-                                <p class="text-gray-400">Jl.Pudak No.5</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="map-pin" class="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" aria-hidden="true"></i>
-                            <div>
-                                <p class="text-gray-300">Jogjakarta:</p>
-                                <p class="text-gray-400">Wisma Geha Lt. 4, Jl Timor no.25</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="phone" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
-                            <a href="tel:+6281234567890" class="text-gray-300 hover:text-blue-400 transition-colors">+62 812-3456-7890</a>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="mail" class="h-4 w-4 text-blue-400" aria-hidden="true"></i>
-                            <a href="mailto:info@medatechnology.id" class="text-gray-300 hover:text-blue-400 transition-colors">info@medatechnology.id</a>
-                        </div>
-                    </address>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="border-t border-gray-800">
-            <div class="container mx-auto px-4 py-6">
-                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-                    <p>&copy; 2024 Meda Technology. All rights reserved.</p>
-                    <nav class="flex space-x-6 mt-4 md:mt-0" aria-label="Footer legal navigation">
-                        <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                        <a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a>
-                        <a href="#" class="hover:text-blue-400 transition-colors">Sitemap</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Detail Modal -->
-    <div id="portfolio-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
-        <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
-                <div class="p-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 id="portfolio-modal-title" class="text-2xl font-bold text-gray-900"></h3>
-                        <button id="close-portfolio-modal" class="text-gray-400 hover:text-gray-600">
-                            <i data-lucide="x" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                    <div id="portfolio-modal-content" class="text-gray-600">
-                        <!-- Content will be loaded here -->
-                    </div>
-                    <div class="mt-6 flex gap-4">
-                        <a href="kontak.html" class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-                            Diskusi Proyek Serupa
-                        </a>
-                        <button id="close-portfolio-modal-btn" class="px-6 py-2 border border-gray-300 text-gray-600 rounded-md hover:bg-gray-50 transition-colors">
-                            Tutup
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+<body class="bg-white font-sans">
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-16">
+    <div class="container mx-auto text-center px-4">
+      <h1 class="text-4xl font-bold mb-4">Portofolio Kami</h1>
+      <p class="text-lg text-blue-100">Solusi digital unggulan yang kami bangun dengan dedikasi dan teknologi terkini</p>
     </div>
+  </header>
 
-    <script src="script.js"></script>
-    <script src="portofolio.js"></script>
+  <!-- Project Showcase -->
+  <section class="py-20 bg-blue-50">
+    <div class="container mx-auto px-4 space-y-32">
+
+      <!-- Meda School -->
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="relative">
+          <img src="/assets/meda-school-web.png" alt="Meda School Web" class="rounded-lg shadow-lg">
+          <img src="/assets/meda-school-mobile.png" alt="Meda School Mobile" class="absolute -bottom-6 -right-6 w-24 border-4 border-white rounded-xl shadow-md">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-600"></i>
+            Meda School
+          </h2>
+          <p class="text-gray-700 mb-4">Platform manajemen pembelajaran untuk sekolah digital dengan antarmuka yang intuitif dan fitur lengkap.</p>
+          <div class="mb-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Fitur Utama:</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Responsive untuk web & mobile</li>
+              <li>Login multi-role: admin, guru, siswa</li>
+              <li>Manajemen nilai dan export laporan otomatis</li>
+              <li>Pengumuman dan integrasi kalender akademik</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Teknologi:</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Laravel</span>
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Vue.js</span>
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- TickTock App -->
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="md:order-2 relative">
+          <img src="/assets/ticktock-web.png" alt="TickTock Web" class="rounded-lg shadow-lg">
+          <img src="/assets/ticktock-mobile.png" alt="TickTock Mobile" class="absolute -bottom-6 -left-6 w-24 border-4 border-white rounded-xl shadow-md">
+        </div>
+        <div class="md:order-1">
+          <h2 class="text-3xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+            <i data-lucide="clock" class="w-6 h-6 text-blue-600"></i>
+            TickTock
+          </h2>
+          <p class="text-gray-700 mb-4">Aplikasi manajemen waktu dan produktivitas yang mempermudah penjadwalan tugas, kolaborasi, dan pengingat otomatis.</p>
+          <div class="mb-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Fitur Utama:</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-1">
+              <li>Integrasi kalender dengan notifikasi real-time</li>
+              <li>Mode fokus untuk meningkatkan produktivitas</li>
+              <li>Statistik aktivitas dan pelacakan waktu</li>
+              <li>Kolaborasi tim & task assignment</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Teknologi:</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Flutter</span>
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-10">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm">&copy; 2024 Meda Technology. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
